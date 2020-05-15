@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css?family=Alatsi&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Abel&display=swap");
+
+//Variables
+$primary-color: red;
+$font-color: white;
+$dark-overlay: rgba(0, 0, 0, 0.7);
+$icon-size: 40px;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alatsi";
+}
+html {
+  scroll-behavior: smooth;
+}
+
+div {
+  display: inline-block;
+}
+
+p {
+  font-family: "Abel";
+}
+
+.navbar {
+  background: $primary-color;
+  font-family: Alatsi;
+  border-bottom: 2px solid black;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+
+  .nav-item {
+    margin-top: 0;
+    margin-right: 20px;
+    transition: 0.2s ease;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid $primary-color;
+  }
+  .nav-item:hover {
+    border-bottom: 2px solid #fff;
+    color: #ffffff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+.jumbotron {
+  margin: 0;
+  padding: 0;
+  min-height: 700px;
+  background-image: url(../imgs/laferrari.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  .container {
+    color: $font-color;
+    padding-top: 100px;
+    h1 {
+      font-size: 100px;
+      position: relative;
+    }
+    p {
+      font-size: 40px;
+    }
+  }
+  .dark-overlay {
+    background: $dark-overlay;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+  }
+}
+#suspension {
+  background: black;
+  color: white;
+  position: relative;
+  text-align: center;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+  img {
+    position: relative;
+    margin: 40px 0 60px 0;
+    border-radius: 15px;
+    width: 100%;
+    top: 80px;
+    opacity: 0.7;
+  }
+  .svg-inline--fa {
+    border-radius: 5px;
+    width: 20px;
+    font-size: $icon-size;
+    position: relative;
+  }
+  p {
+    padding: 10px 0 40px 0;
+  }
+}
+#interior {
+  position: relative;
+  min-height: 700px;
+  background-image: url(../imgs/interior.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  color: $font-color;
+  .container {
+    text-align: center;
+    padding: 50px 0 40px 0;
+    h1 {
+      font-size: 100px;
+      left: 50px;
+      position: relative;
+    }
+  }
+  p {
+    position: relative;
+    left: 50px;
+    padding: 70px 0 0 140px;
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
+#engine {
+  background-color: black;
+  border-top: 2px solid $primary-color;
+  border-bottom: 2px solid $primary-color;
+  color: $font-color;
+  position: relative;
+
+  img {
+    position: relative;
+    margin: 40px 0 60px 0;
+    border-radius: 15px;
+    width: 100%;
+    padding: 20px;
+    top: 100px;
+    left: 20px;
+    opacity: 0.7;
+  }
+  .svg-inline--fa {
+    border-radius: 5px;
+    width: 20px;
+    font-size: $icon-size;
+    position: relative;
+  }
+  h3 {
+    text-align: center;
+  }
+  p {
+    padding: 10px 0 40px 0;
+  }
+}
+#about {
+  background-color: $primary-color;
+  color: $font-color;
+  position: relative;
+  border-bottom: 2px solid $primary-color;
+  font-size: 16px;
+  background: url(../imgs/contact.jpg) no-repeat;
+  background-size: cover;
+
+  .dark-overlay {
+    background: $dark-overlay;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .container {
+    text-align: center;
+    padding-top: 40px;
+  }
+  p {
+    padding: 0 0 0 100px;
+  }
+  h1 {
+    left: 10vw;
+  }
+  img {
+    width: 350px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    padding: 10px;
+    opacity: 0.8;
+  }
+  span {
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+#contact {
+  background: black;
+  color: $font-color;
+  position: relative;
+  border-bottom: 2px solid black;
+  font-size: 16px;
+  padding: 40px 0 60px 0;
+  min-height: 500px;
+
+  .card {
+    background: $primary-color;
+    position: relative;
+    width: 50%;
+    left: 440px;
+  }
+
+  img {
+    position: relative;
+    left: 100px;
+    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+  }
+  h2 {
+    left: 50px;
+    position: relative;
+    padding: 20px 0 20px 40px;
+    font-size: 30px;
+  }
+}
+#ft {
+  background: $primary-color;
+  color: $font-color;
+  position: relative;
+  margin-bottom: 0;
+  .container {
+    text-align: center;
+    padding: 0;
+    p {
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .jumbotron {
+    .container {
+      h1 {
+        font-size: 70px;
+        padding: 10px;
+        top: 50px;
+      }
+      p {
+        font-size: 30px;
+        top: 100px;
+        position: relative;
+      }
+    }
+  }
+  #engine {
+    img {
+      left: 25px;
+    }
+  }
+  #about {
+    p {
+      padding-left: 20px;
+    }
+  }
+
+  #contact {
+    .card {
+      width: 60%;
+      left: 200px;
+    }
+    img {
+      left: 30px;
+    }
+    h2 {
+      left: 0;
+      font-size: 20px;
+    }
+  }
+  #interior .container {
+    h1 {
+      font-size: 80px;
+      padding: 0 70px 0 10px;
+    }
+    p {
+      position: relative;
+      top: 50px;
+      left: 20px;
+      font-size: 20px;
+    }
+  }
+}
+@media (max-width: 580px) {
+  .jumbotron {
+    .container {
+      h1 {
+        top: 0;
+      }
+      p {
+        top: 0;
+        position: relative;
+      }
+    }
+  }
+
+  #contact {
+    .card {
+      width: 100%;
+      left: 0;
+    }
+    img {
+      left: 70px;
+    }
+    h2 {
+      left: 0;
+    }
+  }
+
+  #engine {
+    img {
+      left: 0;
+      top: 20px;
+    }
+  }
+
+  #interior .container {
+    h1 {
+      left: 0;
+      padding: 5px;
+      font-size: 40px;
+    }
+    p {
+      left: 0;
+    }
+  }
+}
